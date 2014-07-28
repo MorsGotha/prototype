@@ -10,6 +10,10 @@ if (isset($_GET["sub"])) {
     $sub = $_GET["sub"];
 }
 
+require 'connect.php';
+
+include './notes/get_notes.php'
+
 ?>
 
 <!DOCTYPE html>
@@ -18,12 +22,24 @@ if (isset($_GET["sub"])) {
 <title>Davidsons Application Prototype</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+
+<link rel="stylesheet" type="text/css" href="./notes/styles.css" />
+<link rel="stylesheet" type="text/css" href="./notes/fancybox/jquery.fancybox-1.2.6.css" media="screen" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./notes/fancybox/jquery.fancybox-1.2.6.pack.js"></script>
+
+<script type="text/javascript" src="./notes/script.js"></script>
+
 <link rel="stylesheet" href="style.css">
+
 </head> 
 
 <body>
-    
-<div id="container-fluid">
+<div id="main">
+            
+<div class="container-fluid">
 
     <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
 
@@ -63,19 +79,25 @@ if (isset($_GET["sub"])) {
     
 <div class="container-fluid">
     <div class="row" style="padding-top: 60px;">
+
         <div class="col-xs-3 pull-left">
+            <a id="addButton" class="green-button" href="./notes/add_note.html" style="margin-top: 70px; margin-left: 500px; z-index:1000">Add a note</a>
 
             <?php include "views/$main/sidebar.php"; ?>
+            
 
         </div>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        
         <?php include "views/$main/$sub.php"; ?>
+
+        <?php echo $notes?>
+        
     </div>
+</div>
 </div>
     
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./notes/script.js"></script>
 
 </body>
 </html>                                		
