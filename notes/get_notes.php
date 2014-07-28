@@ -9,6 +9,8 @@ $zindex='';
 
 while($row=mysql_fetch_assoc($query))
 {
+    
+    // Check if the url has no options, if so is home page/news
     $noteUrl = explode("?", $row['url']);       
     if (!isset($noteUrl[1])) {
         $noteUrl = array("main=home", "sub=news");
@@ -17,6 +19,7 @@ while($row=mysql_fetch_assoc($query))
         $noteUrl = explode("&", $noteUrl[1]);
     }
     
+    // get all the post it notes for this page from the database
     if ($noteUrl[0]=="main=$main" && $noteUrl[1]=="sub=$sub") {
 
         list($left,$top,$zindex) = explode('x',$row['xyz']);

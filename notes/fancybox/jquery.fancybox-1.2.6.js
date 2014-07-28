@@ -280,7 +280,7 @@
 						'left':		(orig_pos.left	- 20 - opts.padding) + 'px',
 						'top':		(orig_pos.top	- 20 - opts.padding) + 'px',
 						'width':	$(orig_item).width() + (opts.padding * 2),
-						'height':	$(orig_item).height() + (opts.padding * 2)
+						'height':	$(orig_item).height() + (opts.padding * 2) +
 					});
 
 					if (opts.zoomOpacity) {

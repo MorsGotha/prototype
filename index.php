@@ -26,7 +26,7 @@ include './notes/get_notes.php'
 <link rel="stylesheet" type="text/css" href="./notes/styles.css" />
 <link rel="stylesheet" type="text/css" href="./notes/fancybox/jquery.fancybox-1.2.6.css" media="screen" />
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
 <script type="text/javascript" src="./notes/fancybox/jquery.fancybox-1.2.6.pack.js"></script>
 
@@ -90,14 +90,13 @@ include './notes/get_notes.php'
 
         <?php include "views/$main/$sub.php"; ?>
 
-        <?php echo $notes?>
+        <?php echo $notes; ?>
         
     </div>
 </div>
 </div>
     
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="./notes/script.js"></script>
 
 </body>
 </html>                                		

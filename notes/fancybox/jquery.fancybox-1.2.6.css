@@ -42,7 +42,7 @@ div#fancy_outer {
 div#fancy_inner {
 	position: relative;
 	width:100%;
-	height:100%;
+	height:400px;
 	background: #FFF;
 }
 
@@ -94,7 +94,7 @@ div#fancy_close {
 #fancy_ajax {
 	width: 100%;
 	height: 100%;
-	overflow: auto;
+	overflow: hidden;
 }
 
 a#fancy_left, a#fancy_right {

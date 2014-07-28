@@ -12,7 +12,7 @@
 	box-shadow:2px 2px 0 #DDDDDD;
 }
 
-#fancy_ajax .note{	cursor:default; }
+#fancy_ajax .note{	cursor:default; overflow:hidden; }
 
 /* Three styles for the notes: */
 
