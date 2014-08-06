@@ -10,20 +10,36 @@ if (isset($_GET["sub"])) {
     $sub = $_GET["sub"];
 }
 
+require 'connect.php';
+
+include './notes/get_notes.php'
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Davidsons Application Prototype - All</title>
+<title>Davidsons Application Prototype</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+
+<link rel="stylesheet" type="text/css" href="./notes/styles.css" />
+<link rel="stylesheet" type="text/css" href="./notes/fancybox/jquery.fancybox-1.2.6.css" media="screen" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./notes/fancybox/jquery.fancybox-1.2.6.pack.js"></script>
+
+<script type="text/javascript" src="./notes/script.js"></script>
+
 <link rel="stylesheet" href="style.css">
+
 </head> 
 
 <body>
-    
-<div id="container-fluid">
+<div id="main">
+            
+<div class="container-fluid">
 
     <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
 
@@ -33,44 +49,43 @@ if (isset($_GET["sub"])) {
                 <li<?php if ($main=="home") echo ' class="active"'; ?>>
                     <a href="all.php" class="glyphicon glyphicon-home"> Home</a>
                 </li>
-                <li<?php if ($main=="technical") echo ' class="active"'; ?>>
-                    <a href=""  id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-list-alt"></span> Technical <span class="glyphicon glyphicon-chevron-down"></a>
+                <li<?php if ($main=="stdhousetypes") echo ' class="active"'; ?>>
+                    <a href="#" id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-list-alt"></span> Std House Types <span class="glyphicon glyphicon-chevron-down"></span></a>
                     <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Sites</a></li>
-                        <li><a href="#">Plots</a></li>
-                        <li><a href="#">Schedules</a></li>
+                        <li><a href="all.php?main=stdhousetypes&sub=dashboard">Dashboard</a></li>
+                        <li><a href="all.php?main=stdhousetypes&sub=drawings">Drawings</a></li>
+                        <li><a href="all.php?main=stdhousetypes&sub=schedules">Schedules</a></li>
+                        <li><a href="all.php?main=stdhousetypes&sub=buildprogramme">Build Programme</a></li>
                     </ul>
                 </li>
-                <li<?php if ($main=="commercial") echo ' class="active"'; ?>>
-                    <a href=""  id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> Tender It <span class="glyphicon glyphicon-chevron-down"></a>
+                <li<?php if ($main=="developments") echo ' class="active"'; ?>>
+                    <a href="#" id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-list-alt"></span> Developments <span class="glyphicon glyphicon-chevron-down"></span></a>
                     <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Calloffs</a></li>
+                        <li><a href="all.php?main=developments&sub=dashboard">Dashboard</a></li>
+                        <li><a href="all.php?main=developments&sub=sites">Sites</a></li>
                     </ul>
                 </li>
-                <li<?php if ($main=="construction") echo ' class="active"'; ?>>
-                    <a href=""  id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-wrench"></span> Build Programme <span class="glyphicon glyphicon-chevron-down"></a>
+                <li<?php if ($main=="admin") echo ' class="active"'; ?>>
+                <li class="dropdown">
+                    <a href="#" id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-wrench"></span> Admin <span class="glyphicon glyphicon-chevron-down"></span></a>
                     <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Build Release</a></li>
-                        <li><a href='#'>Programme</a></li>
+                        <li><a href="#">Access Control</a></li>
+                        <li><a href="#">Users</a></li>
+                        <li><a href="#">Coins</a></li>
+                        <li><a href="#">News Editor</a></li>
+                        <li><a href="#">Email Alerts</a></li>
+                        <li><a href="#">Miscellaneous</a></li>
+                        <li><a href="all.php?main=admin&sub=buildstages">Master Library - Build Stages</a></li>
+                        <li><a href="all.php?main=admin&sub=elements">Master Library - Elements</a></li>
+                        <li><a href="all.php?main=admin&sub=drawings">Master Library - Drawings</a></li>
                     </ul>
-                </li>
-                <li<?php if ($main=="sales") echo ' class="active"'; ?>>
-                    <a href="" id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-gbp"></span> Sell It <span class="glyphicon glyphicon-chevron-down"></a>
-                    <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Sales release</a></li>
-                        <li><a href='#'>Purchasers</a></li>
-                        <li><a href='#'>Standard Selection</a></li>
-                        <li><a href='#'>Extras</a></li>
-                    </ul>
-                </li>
-                <li<?php if ($main=="customersupport") echo ' class="active"'; ?>>
-                    <a href="" id="nbAcctDD" class="dropdown-toggle"><span class="glyphicon glyphicon-ok"></span> Bulk Call Offs</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav pull-right">
                 <li class="dropdown">
                     <a href="#" id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Gary Jarvis Logged In <span class="glyphicon glyphicon-chevron-down"></span></a>
                     <ul class="dropdown-menu pull-right">
+                        <li><a href="#">Your Details</a></li>
                         <li><a href="#">Log Out</a></li>
                     </ul>
                 </li>
@@ -81,16 +96,14 @@ if (isset($_GET["sub"])) {
     
 <div class="container-fluid">
     <div class="row" style="padding-top: 60px;">
-        <div class="col-xs-3 pull-left">
+        <a id="addButton" class="green-button" href="./notes/add_note.html" style="margin-top: 130px; margin-left: 500px; z-index:1000">Add a note</a>
 
-            <?php include "views/$main/sidebar.php"; ?>
+        <?php include "viewsall/$main/$sub.php"; ?>
 
-        </div>
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <?php echo $notes; ?>
         
-        <?php include "views/$main/$sub.php"; ?>
     </div>
+</div>
 </div>
     
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
