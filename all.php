@@ -26,6 +26,9 @@ include './notes/get_notes.php'
 <link rel="stylesheet" type="text/css" href="./notes/styles.css" />
 <link rel="stylesheet" type="text/css" href="./notes/fancybox/jquery.fancybox-1.2.6.css" media="screen" />
 
+<script src="http://cdn.alloyui.com/2.5.0/aui/aui-min.js"></script>
+<link href="http://cdn.alloyui.com/2.5.0/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
+
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
 <script type="text/javascript" src="./notes/fancybox/jquery.fancybox-1.2.6.pack.js"></script>
@@ -53,16 +56,21 @@ include './notes/get_notes.php'
                     <a href="#" id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-list-alt"></span> Std House Types <span class="glyphicon glyphicon-chevron-down"></span></a>
                     <ul class="dropdown-menu pull-right">
                         <li><a href="all.php?main=stdhousetypes&sub=dashboard">Dashboard</a></li>
-                        <li><a href="all.php?main=stdhousetypes&sub=drawings">Drawings</a></li>
-                        <li><a href="all.php?main=stdhousetypes&sub=schedules">Schedules</a></li>
-                        <li><a href="all.php?main=stdhousetypes&sub=buildprogramme">Build Programme</a></li>
+                        <li><a href="all.php?main=stdhousetypes&sub=3 Bed">3 Bed</a></li>
+                        <li><a href="all.php?main=stdhousetypes&sub=4 Bed">4 Bed</a></li>
+                        <li><a href="all.php?main=stdhousetypes&sub=4 Bed">5 Bed</a></li>
+                        <li><a href="all.php?main=stdhousetypes&sub=4 Bed">Social</a></li> 
                     </ul>
+                </li>
+                <li<?php if ($main=="stdgaragetypes") echo ' class="active"'; ?>>
+                    <a href="#" id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-list-alt"></span> Std Garage Types </span></a>
                 </li>
                 <li<?php if ($main=="developments") echo ' class="active"'; ?>>
                     <a href="#" id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-list-alt"></span> Developments <span class="glyphicon glyphicon-chevron-down"></span></a>
                     <ul class="dropdown-menu pull-right">
                         <li><a href="all.php?main=developments&sub=dashboard">Dashboard</a></li>
-                        <li><a href="all.php?main=developments&sub=sites">Sites</a></li>
+                        <li><a href="all.php?main=developments&sub=sites">Maintenance</a></li>
+                        <li><a href="all.php?main=developments&sub=plots_on_sites">Sites</a></li>
                     </ul>
                 </li>
                 <li<?php if ($main=="admin") echo ' class="active"'; ?>>
@@ -76,8 +84,11 @@ include './notes/get_notes.php'
                         <li><a href="#">Email Alerts</a></li>
                         <li><a href="#">Miscellaneous</a></li>
                         <li><a href="all.php?main=admin&sub=buildstages">Master Library - Build Stages</a></li>
-                        <li><a href="all.php?main=admin&sub=elements">Master Library - Elements</a></li>
                         <li><a href="all.php?main=admin&sub=drawings">Master Library - Drawings</a></li>
+                        <li><a href="all.php?main=admin&sub=schedules">Master Library - Schedules</a></li>
+                        <li><a href="all.php?main=admin&sub=products">Master Library - Products</a></li>
+                        <li><a href="all.php?main=admin&sub=products">Master Library - Std House Type Menu</a></li>
+                        <li><a href="all.php?main=admin&sub=products">Master Library - Sales Extras</a></li>
                     </ul>
                 </li>
             </ul>
@@ -96,11 +107,11 @@ include './notes/get_notes.php'
     
 <div class="container-fluid">
     <div class="row" style="padding-top: 60px;">
-        <a id="addButton" class="green-button" href="./notes/add_note.html" style="margin-top: 130px; margin-left: 500px; z-index:1000">Add a note</a>
+        <!--a id="addButton" class="green-button" href="./notes/add_note.html" style="margin-top: 130px; margin-left: 500px; z-index:1000">Add a note</a-->
 
         <?php include "viewsall/$main/$sub.php"; ?>
 
-        <?php echo $notes; ?>
+        <?php //echo $notes; ?>
         
     </div>
 </div>
