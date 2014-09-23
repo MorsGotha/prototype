@@ -4,8 +4,8 @@
 /* Database config */
 
 $db_host		= 'localhost';
-$db_user		= 'jsimmons';
-$db_pass		= 'morsgotha';
+$db_user		= 'root';
+$db_pass		= '';
 $db_database            = 'prototype';
 
 /* End config */

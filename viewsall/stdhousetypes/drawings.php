@@ -1,252 +1,444 @@
-<div class="col-xs-12 pull-left">
+<ol class="breadcrumb">
+  <li><a href="all.php">Home</a></li>
+  <li><a href="all.php?main=stdhousetypes&sub=types">3 Bedrooms</a></li>
+  <li><a href="all.php?main=stdhousetypes&sub=type">DH501V-05</a></li>
+  <li class="active">Drawings</li>
+</ol>
 
+<div class="col-xs-3 pull-left">
+                            
+<div id="accordion" class="panel-group">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-parent="#accordion" href="?main=stdhousetypes&sub=type">Dashboard</a>
+            </h4>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-parent="#accordion" href="?main=stdhousetypes&sub=drawings">Drawings</a>
+            </h4>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-parent="#accordion" href="?main=stdhousetypes&sub=schedules">Schedules</a>
+            </h4>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-parent="#accordion" href="?main=stdhousetypes&sub=programme">Programme</a>
+            </h4>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+<div class="col-xs-9 pull-left">
+    
 <div class="panel panel-default">
-  <div class="panel-heading">Welcome to Davidsons Application Prototype - Add and edit documents to a plot here</div>
+  <div class="panel-heading">Welcome to Davidsons Application Prototype - Define PDF's/CAD/Documents here</div>
   <div class="panel-body">
-      
-      <div id="myTreeView"></div>
-      
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ACTIVE/NAME</th>
+                <th>REV</th>
+                <th>FILE</th>
+                <th></th>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr class="alt">
+                <td><div class="input-group">
+                    <span class="input-group-addon">
+                      <input type="checkbox" checked="true">
+                    </span>
+                    <input type="text" class="form-control" value="Main Housetype Drawing"></td>
+                <td>
+                    <span class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                          05 (Latest)
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">01</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">02</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">03</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">04</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">05</a></li>
+                        </ul>
+                    </span>
+                </td>
+                <td><a href="./uploads/DH501V-2 Rev 05 (Newstead).pdf">DH501V-05.pdf</a></td>
+                <td>
+                    <button class="btn btn-default" type="button"'>
+                        Upload
+                    </button>
+                    <button class="btn btn-default" type="button"'>
+                        Browse Files
+                    </button>
+                </td>
+            </tr>
+            <tr class="alt">
+                <td><div class="input-group">
+                    <span class="input-group-addon">
+                      <input type="checkbox" checked="true">
+                    </span>
+                    <input type="text" class="form-control" value="Joist Layouts"></td>
+                <td>
+                    <span class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                          05 (Latest)
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">01</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">02</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">03</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">04</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">05</a></li>
+                        </ul>
+                    </span>
+                </td>
+                <td><a href="./uploads/DH501V-2 Rev 05 (Newstead).pdf">DH501V-05.pdf</a></td>
+                <td>
+                    <button class="btn btn-default" type="button"'>
+                        Upload
+                    </button>
+                    <button class="btn btn-default" type="button"'>
+                        Browse Files
+                    </button>
+                </td>
+            </tr>
+            <tr class="alt">
+                <td><div class="input-group">
+                    <span class="input-group-addon">
+                      <input type="checkbox" checked="true">
+                    </span>
+                    <input type="text" class="form-control" value="Roof Design"></td>
+                <td>
+                    <span class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                          05 (Latest)
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">01</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">02</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">03</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">04</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">05</a></li>
+                        </ul>
+                    </span>
+                </td>
+                <td><a href="./uploads/DH501V-2 Rev 05 (Newstead).pdf">DH501V-05.pdf</a></td>
+                <td>
+                    <button class="btn btn-default" type="button"'>
+                        Upload
+                    </button>
+                    <button class="btn btn-default" type="button"'>
+                        Browse Files
+                    </button>
+                </td>	
+            </tr>
+            <tr class="alt">
+                <td><div class="input-group">
+                    <span class="input-group-addon">
+                      <input type="checkbox" checked="true">
+                    </span>
+                    <input type="text" class="form-control" value="Stair Graph"></td>
+                <td>
+                    <span class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                          05 (Latest)
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">01</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">02</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">03</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">04</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">05</a></li>
+                        </ul>
+                    </span>
+                </td>
+                <td><a href="./uploads/DH501V-2 Rev 05 (Newstead).pdf">DH501V-05.pdf</a></td>
+                <td>
+                    <button class="btn btn-default" type="button"'>
+                        Upload
+                    </button>
+                    <button class="btn btn-default" type="button"'>
+                        Browse Files
+                    </button>
+                </td>	
+            </tr>
+            <tr class="alt">
+                <td><div class="input-group">
+                    <span class="input-group-addon">
+                      <input type="checkbox" checked="true">
+                    </span>
+                        <input type="text" class="form-control" value="Heating and Plumbing Design"></td>
+                <td>
+                    <span class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                          01 (Latest)
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">01</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">02</a></li>
+                        </ul>
+                    </span>
+                </td>
+                <td><a href="./uploads/DH501V-2 Rev 05 (Newstead).pdf">DH501V-05.pdf</a></td>
+                <td>
+                    <button class="btn btn-default" type="button"'>
+                        Upload
+                    </button>
+                    <button class="btn btn-default" type="button"'>
+                        Browse Files
+                    </button>
+                </td>	
+            </tr>
+            <tr>
+                <td><div class="input-group">
+                    <span class="input-group-addon">
+                      <input type="checkbox" checked="true">
+                    </span>
+                    <input type="text" class="form-control" value="Kitchen Layout"></td>
+                <td>
+                    <span class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                          05 (Latest)
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">01</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">02</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">03</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">04</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">05</a></li>
+                        </ul>
+                    </span>
+                </td>
+                <td><a href="./uploads/DH501V-2 Rev 05 (Newstead).pdf">DH501V-05.pdf</a></td>
+                <td>
+                    <button class="btn btn-default" type="button"'>
+                        Upload
+                    </button>
+                    <button class="btn btn-default" type="button"'>
+                        Browse Files
+                    </button>
+                </td>	
+            </tr>            
+            <tr class="alt">
+                <td><div class="input-group">
+                    <span class="input-group-addon">
+                      <input type="checkbox" checked="true">
+                    </span>
+                    <input type="text" class="form-control" value="Wardrobe Layout Bed 1"></td>
+                    <td>
+                    <span class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                          11 (Latest)
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">01</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">02</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">03</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">04</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">05</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">06</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">07</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">08</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">09</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">11</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">12</a></li>
+                        </ul>
+                    </span>
+                    </td>
+                <td><a href="./uploads/DH501V-2 Rev 05 (Newstead).pdf">DH501V-05.pdf</a></td>
+                <td>
+                    <button class="btn btn-default" type="button"'>
+                        Upload
+                    </button>
+                    <button class="btn btn-default" type="button"'>
+                        Browse Files
+                    </button>
+                </td>	
+            </tr>
+            <tr class="alt">
+                <td><div class="input-group">
+                    <span class="input-group-addon">
+                      <input type="checkbox" checked="true">
+                    </span>
+                    <input type="text" class="form-control" value="Wardrobe Layout Bed 2"></td>
+                <td>
+                    <span class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                          05 (Latest)
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">01</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">02</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">03</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">04</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">05</a></li>
+                        </ul>
+                    </span>
+                </td>
+                <td><a href="./uploads/DH501V-2 Rev 05 (Newstead).pdf">DH501V-05.pdf</a></td>
+                <td>
+                    <button class="btn btn-default" type="button"'>
+                        Upload
+                    </button>
+                    <button class="btn btn-default" type="button"'>
+                        Browse Files
+                    </button>
+                </td>	
+            </tr>
+                        <tr class="alt">
+                <td><div class="input-group">
+                    <span class="input-group-addon">
+                      <input type="checkbox" checked="true">
+                    </span>
+                    <input type="text" class="form-control" value="Wardrobe Layout Bed 3"></td>
+                <td>
+                    <span class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                          05 (Latest)
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">01</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">02</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">03</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">04</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">05</a></li>
+                        </ul>
+                    </span>
+                </td>
+                <td><a href="./uploads/DH501V-2 Rev 05 (Newstead).pdf">DH501V-05.pdf</a></td>
+                <td>
+                    <button class="btn btn-default" type="button"'>
+                        Upload
+                    </button>
+                    <button class="btn btn-default" type="button"'>
+                        Browse Files
+                    </button>
+                </td>
+            </tr>
+                        <tr class="alt">
+                <td><div class="input-group">
+                    <span class="input-group-addon">
+                      <input type="checkbox" checked="true">
+                    </span>
+                    <input type="text" class="form-control" value="Wardrobe Layout Bed 4"></td>
+                <td>
+                    <span class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                          03 (Latest)
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">01</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">02</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">03</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">04</a></li>
+                        </ul>
+                    </span>
+                </td>
+                <td><a href="./uploads/DH501V-2 Rev 05 (Newstead).pdf">DH501V-05.pdf</a></td>
+                <td>
+                    <button class="btn btn-default" type="button"'>
+                        Upload
+                    </button>
+                    <button class="btn btn-default" type="button"'>
+                        Browse Files
+                    </button>
+                </td>	
+            </tr>
+                        <tr class="alt">
+                <td><div class="input-group">
+                    <span class="input-group-addon">
+                      <input type="checkbox" checked="true">
+                    </span>
+                    <input type="text" class="form-control" value="Wardrobe Layout Bed 5"></td>
+                <td>
+                    <span class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                          07 (Latest)
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">01</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">02</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">03</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">04</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">05</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">06</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">07</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">08</a></li>
+                        </ul>
+                    </span>
+                </td>
+                <td><a href="./uploads/DH501V-2 Rev 05 (Newstead).pdf">DH501V-05.pdf</a></td>
+                <td>
+                    <button class="btn btn-default" type="button"'>
+                        Upload
+                    </button>
+                    <button class="btn btn-default" type="button"'>
+                        Browse Files
+                    </button>
+                </td>	
+            </tr>
+            <tr class="alt">
+                <td><div class="input-group">
+                    <span class="input-group-addon">
+                      <input type="checkbox" checked="true">
+                    </span>
+                    <input type="text" class="form-control" value="Structural Calculations"></td>
+                    <td>
+                    <span class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                          04 (Latest)
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">01</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">02</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">03</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">04</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">05</a></li>
+                        </ul>
+                    </span>
+                    </td>
+                <td><a href="./uploads/DH501V-2 Rev 05 (Newstead).pdf">DH501V-05.pdf</a></td>
+                <td>
+                    <button class="btn btn-default" type="button"'>
+                        Upload
+                    </button>
+                    <button class="btn btn-default" type="button"'>
+                        Browse Files
+                    </button>
+                </td>
+            </tr>
+        <tbody>
+    </table>  
+    
   </div>
 </div>
-
+    
 </div>
-
-<script>
-YUI().use(
-  'aui-tree-view',
-  function(Y) {
-    new Y.TreeViewDD(
-      {
-        boundingBox: '#myTreeView',
-        children: [
-            {
-              children: [
-                {
-                  children: [
-                    {   
-                        children: [
-                            {
-                                children: [
-                                    {label: 'Kitchen DH301V-A.pdf', leaf: true, type: 'check'},
-                                    {label: 'Kitchen DH301V-B.pdf', leaf: true, type: 'check'},
-                                    {label: 'Kitchen DH301V-C.pdf', leaf: true, type: 'check'},
-                                ],
-                                label: 'Kitchens', expanded: false
-                            },
-                            {
-                                children: [
-                                    {label: 'JL DH301V-A.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH301V-B.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH301V-C.cad', leaf: true, type: 'check'},
-                                ],
-                                label: 'Joist Layouts', expanded: false
-                            },
-                        ],
-                        label: 'DH301V', expanded: false
-                    },
-                                        {   
-                        children: [
-                            {
-                                children: [
-                                    {label: 'Kitchen DH301V-A.pdf', leaf: true, type: 'check'},
-                                    {label: 'Kitchen DH301V-B.pdf', leaf: true, type: 'check'},
-                                    {label: 'Kitchen DH301V-C.pdf', leaf: true, type: 'check'},
-                                ],
-                                label: 'Kitchens', expanded: false
-                            },
-                            {
-                                children: [
-                                    {label: 'JL DH301V-A.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH301V-B.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH301V-C.cad', leaf: true, type: 'check'},
-                                ],
-                                label: 'Joist Layouts', expanded: false
-                            },
-                        ],
-                        label: 'DH309V', expanded: false
-                    },
-                                        {   
-                        children: [
-                            {
-                                children: [
-                                    {label: 'Kitchen DH301V-A.pdf', leaf: true, type: 'check'},
-                                    {label: 'Kitchen DH301V-B.pdf', leaf: true, type: 'check'},
-                                    {label: 'Kitchen DH301V-C.pdf', leaf: true, type: 'check'},
-                                ],
-                                label: 'Kitchens', expanded: false
-                            },
-                            {
-                                children: [
-                                    {label: 'JL DH301V-A.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH301V-B.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH301V-C.cad', leaf: true, type: 'check'},
-                                ],
-                                label: 'Joist Layouts', expanded: false
-                            },
-                        ],
-                        label: 'DH339V', expanded: false
-                    },
-                  ],
-                  expanded: false,
-                  label: '4 Bedrooms'
-                },
-                {
-                  children: [
-                    {   
-                        children: [
-                            {
-                                children: [
-                                    {label: '<a href="#">Kitchen DH401V-A.pdf</a>', leaf: true, type: 'check'},
-                                    {label: '<a href="#">Kitchen DH401V-B.pdf</a>', leaf: true, type: 'check'},
-                                    {label: '<a href="#">Kitchen DH401V-C.pdf</a>', leaf: true, type: 'check'},
-                                ],
-                                label: 'Kitchens', expanded: true
-                            },
-                            {
-                                children: [
-                                    {label: 'JL DH401V-A.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH401V-B.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH401V-C.cad', leaf: true, type: 'check'},
-                                ],
-                                label: 'Joist Layouts', expanded: false
-                            },
-                        ],
-                        label: 'DH401V', expanded: true
-                    },
-                                        {   
-                        children: [
-                            {
-                                children: [
-                                    {label: 'Kitchen DH401V-A.pdf', leaf: true, type: 'check'},
-                                    {label: 'Kitchen DH401V-B.pdf', leaf: true, type: 'check'},
-                                    {label: 'Kitchen DH401V-C.pdf', leaf: true, type: 'check'},
-                                ],
-                                label: 'Kitchens', expanded: false
-                            },
-                            {
-                                children: [
-                                    {label: 'JL DH401V-A.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH401V-B.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH401V-C.cad', leaf: true, type: 'check'},
-                                ],
-                                label: 'Joist Layouts', expanded: false
-                            },
-                        ],
-                        label: 'DH409V', expanded: false
-                    },
-                                        {   
-                        children: [
-                            {
-                                children: [
-                                    {label: 'Kitchen DH401V-A.pdf', leaf: true, type: 'check'},
-                                    {label: 'Kitchen DH401V-B.pdf', leaf: true, type: 'check'},
-                                    {label: 'Kitchen DH401V-C.pdf', leaf: true, type: 'check'},
-                                ],
-                                label: 'Kitchens', expanded: false
-                            },
-                            {
-                                children: [
-                                    {label: 'JL DH401V-A.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH401V-B.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH401V-C.cad', leaf: true, type: 'check'},
-                                ],
-                                label: 'Joist Layouts', expanded: false
-                            },
-                        ],
-                        label: 'DH439V', expanded: false
-                    },
-                  ],
-                  expanded: true,
-                  label: '4 Bedrooms'
-                },
-                {
-                  children: [
-                    {   
-                        children: [
-                            {
-                                children: [
-                                    {label: 'Kitchen DH501V-A.pdf', leaf: true, type: 'check'},
-                                    {label: 'Kitchen DH501V-B.pdf', leaf: true, type: 'check'},
-                                    {label: 'Kitchen DH501V-C.pdf', leaf: true, type: 'check'},
-                                ],
-                                label: 'Kitchens', expanded: true
-                            },
-                            {
-                                children: [
-                                    {label: 'JL DH501V-A.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH501V-B.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH501V-C.cad', leaf: true, type: 'check'},
-                                ],
-                                label: 'Joist Layouts', expanded: false
-                            },
-                        ],
-                        label: 'DH501V', expanded: true
-                    },
-                                        {   
-                        children: [
-                            {
-                                children: [
-                                    {label: 'Kitchen DH501V-A.pdf', leaf: true, type: 'check'},
-                                    {label: 'Kitchen DH501V-B.pdf', leaf: true, type: 'check'},
-                                    {label: 'Kitchen DH501V-C.pdf', leaf: true, type: 'check'},
-                                ],
-                                label: 'Kitchens', expanded: false
-                            },
-                            {
-                                children: [
-                                    {label: 'JL DH501V-A.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH501V-B.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH501V-C.cad', leaf: true, type: 'check'},
-                                ],
-                                label: 'Joist Layouts', expanded: false
-                            },
-                        ],
-                        label: 'DH509V', expanded: false
-                    },
-                                        {   
-                        children: [
-                            {
-                                children: [
-                                    {label: 'Kitchen DH501V-A.pdf', leaf: true, type: 'check'},
-                                    {label: 'Kitchen DH501V-B.pdf', leaf: true, type: 'check'},
-                                    {label: 'Kitchen DH501V-C.pdf', leaf: true, type: 'check'},
-                                ],
-                                label: 'Kitchens', expanded: false
-                            },
-                            {
-                                children: [
-                                    {label: 'JL DH501V-A.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH501V-B.cad', leaf: true, type: 'check'},
-                                    {label: 'JL DH501V-C.cad', leaf: true, type: 'check'},
-                                ],
-                                label: 'Joist Layouts', expanded: false
-                            },
-                        ],
-                        label: 'DH539V', expanded: false
-                    },
-                  ],
-                  expanded: false,
-                  label: '5 Bedrooms',
-                }
-              ],
-              expanded: true,
-              label: 'Houses,'
-            },
-            {
-              children: [
-                {label: 'Watermelon', leaf: true, type: 'task'},
-                {label: 'Apricot', leaf: true, type: 'task'},
-                {label: 'Pineapple', leaf: true,  type: 'task'},
-                {label: 'Kiwi', leaf: true, type: 'task'},
-                {label: 'Orange', leaf: true, type: 'task'},
-                {label: 'Pomegranate', leaf: true,  type: 'task'}
-              ],
-              expanded: false,
-              label: 'Flats',
-            }
-          ]
-      }
-    ).render();
-  }
-);
-</script>

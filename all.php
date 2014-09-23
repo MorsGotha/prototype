@@ -12,7 +12,7 @@ if (isset($_GET["sub"])) {
 
 require 'connect.php';
 
-include './notes/get_notes.php'
+//include './notes/get_notes.php'
 
 ?>
 
@@ -24,16 +24,10 @@ include './notes/get_notes.php'
 <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 
 <link rel="stylesheet" type="text/css" href="./notes/styles.css" />
-<link rel="stylesheet" type="text/css" href="./notes/fancybox/jquery.fancybox-1.2.6.css" media="screen" />
-
-<script src="http://cdn.alloyui.com/2.5.0/aui/aui-min.js"></script>
-<link href="http://cdn.alloyui.com/2.5.0/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
-<script type="text/javascript" src="./notes/fancybox/jquery.fancybox-1.2.6.pack.js"></script>
 
-<script type="text/javascript" src="./notes/script.js"></script>
 
 <link rel="stylesheet" href="style.css">
 
@@ -56,10 +50,10 @@ include './notes/get_notes.php'
                     <a href="#" id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-list-alt"></span> Std House Types <span class="glyphicon glyphicon-chevron-down"></span></a>
                     <ul class="dropdown-menu pull-right">
                         <li><a href="all.php?main=stdhousetypes&sub=dashboard">Dashboard</a></li>
-                        <li><a href="all.php?main=stdhousetypes&sub=3 Bed">3 Bed</a></li>
-                        <li><a href="all.php?main=stdhousetypes&sub=4 Bed">4 Bed</a></li>
-                        <li><a href="all.php?main=stdhousetypes&sub=4 Bed">5 Bed</a></li>
-                        <li><a href="all.php?main=stdhousetypes&sub=4 Bed">Social</a></li> 
+                        <li><a href="all.php?main=stdhousetypes&sub=types">3 Bed</a></li>
+                        <li><a href="all.php?main=stdhousetypes&sub=types">4 Bed</a></li>
+                        <li><a href="all.php?main=stdhousetypes&sub=types">5 Bed</a></li>
+                        <li><a href="all.php?main=stdhousetypes&sub=types">Social</a></li> 
                     </ul>
                 </li>
                 <li<?php if ($main=="stdgaragetypes") echo ' class="active"'; ?>>
@@ -87,8 +81,8 @@ include './notes/get_notes.php'
                         <li><a href="all.php?main=admin&sub=drawings">Master Library - Drawings</a></li>
                         <li><a href="all.php?main=admin&sub=schedules">Master Library - Schedules</a></li>
                         <li><a href="all.php?main=admin&sub=products">Master Library - Products</a></li>
-                        <li><a href="all.php?main=admin&sub=products">Master Library - Std House Type Menu</a></li>
-                        <li><a href="all.php?main=admin&sub=products">Master Library - Sales Extras</a></li>
+                        <li><a href="all.php?main=admin&sub=stdhousetypes">Master Library - Std House Type Menu</a></li>
+                        <li><a href="all.php?main=admin&sub=sales">Master Library - Sales Extras</a></li>
                     </ul>
                 </li>
             </ul>

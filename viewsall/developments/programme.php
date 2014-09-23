@@ -1,3 +1,12 @@
+<ol class="breadcrumb">
+  <li><a href="all.php">Home</a></li>
+  <li><a href="all.php?main=developments&sub=dashboard">Developments</a></li>
+  <li><a href="all.php?main=developments&sub=plots_on_sites">Plots - Site Selection</a></li>
+  <li><a href="all.php?main=developments&sub=site">Anstey</a></li>
+  <li><a href="all.php?main=developments&sub=plot">Plot 001 - DH501V</a></li>
+  <li class="active">Programme</li>
+</ol>
+
 <div class="col-xs-5 pull-left">
     <span class="dropdown">
       <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu6" data-toggle="dropdown">
@@ -113,7 +122,27 @@
     
     <tbody>
         <tr>
-            <td>001</td>
+            <td>Estimated Schedule</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>2</td>
+            <td>3</td>
+             <td>3</td>
+            <td>4</td>
+            <td>4</td>
+            <td>5</td>
+            <td>5</td>
+            <td>6</td>
+            <td>6</td>
+            <td>7</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>@</td>
+        </tr>
+        <tr>
+            <td>Actual</td>
             <td>1</td>
             <td> </td>
             <td> </td>
@@ -126,13 +155,39 @@
             <td>2</td>
             <td> </td>
             <td> </td>
-            <td>
-                Foundations: <input type="checkbox">
-                Foundations: <input type="checkbox">
-                Foundations: <input type="checkbox">
-                Foundations: <input type="checkbox">
-                Foundations: <input type="checkbox">
-                Foundations: <input type="checkbox">
+            <td>       
+                Stage 2 - Supers Progress
+                <ul>
+                    <li>
+                        <label class="checkbox">
+                            <input type="checkbox" checked>
+                            Superstructure First Lift
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input type="checkbox" checked>
+                            First Floor Joists
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            Superstructure Second Lift
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            Roof Construction
+                        </label>
+                    </li>
+                </ul>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="05" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                    <span class="sr-only">50% Complete</span>
+                    </div>
+                </div>
             </td>
             <td> </td>
             <td> </td>
